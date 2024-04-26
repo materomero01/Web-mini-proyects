@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body>
+      <section>
+        <img src="https://i.pinimg.com/564x/1b/8c/74/1b8c7451a2cf9d4d713f12944c7a2a5b.jpg">
+        <img src="https://i.pinimg.com/564x/5d/92/d2/5d92d23f3828cbf520ae147b1547d85b.jpg">
+        <img src="https://i.pinimg.com/564x/21/5a/80/215a80aede37a9d36f3a44934dcbbdc5.jpg">
+        <img src="https://i.pinimg.com/564x/4f/b5/42/4fb542abc8fe6929fa772d8f97fa21c6.jpg">
+        <img src="https://i.pinimg.com/564x/83/5c/10/835c10bfaa4f80e5e1d6399bc6c5e38e.jpg">
+    </section>
+
+    <style>
+    section {
+        display:flex ;
+        width: 600px;
+        height: 430;
+    }
+    section img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .0s ease;
+    }
+    
+    section img:hover{
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    </style>
+
+</body>
+</html>
